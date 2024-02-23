@@ -1,13 +1,27 @@
 class Power extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * When given a number annd a power, program computes the answer
+  * @author: Ryan Ip
   */
   
   public void run() {
-    
-    // start coding here
+  // variables
+  double dblInt;
+  double dblPower;
+  double dblAnswer;
+  
+  // getting power and int
+
+  dblInt = readDouble("Enter the number: ");
+  dblPower = readDouble("Enter the power: ");
+  // caculate power
+  dblAnswer = Math.pow(dblPower, dblPower);
+
+  // print answer
+  System.out.println("The answer is " + dblAnswer);
+  
+
     
   }
 }
